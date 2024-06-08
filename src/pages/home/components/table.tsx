@@ -145,13 +145,13 @@ export function CSVTable({ initialValue, client }: ICSVTable) {
   return (
     <div className="flex h-screen w-full flex-col p-8">
       <div className="flex justify-between">
-        <h1 className="text-4xl font-semibold leading-none tracking-tight">
+        <h1 className="mb-8 text-4xl font-semibold leading-none tracking-tight">
           Estimativas de Tarefas - {client}
         </h1>
         <TogleTheme />
       </div>
 
-      <div className="flex h-full flex-col justify-center gap-4">
+      <div className="flex flex-col justify-center gap-4">
         <div className="flex gap-4">
           <InfoCard title="Total Estimado" description={totalEstimate} />
 
@@ -171,7 +171,7 @@ export function CSVTable({ initialValue, client }: ICSVTable) {
           <InfoCard title="Valor recebido" description={totalReceived} />
         </div>
 
-        <div className="rounded-md border">
+        <div className="h-full rounded-md border">
           <Table>
             <TableHeader>
               {table.getHeaderGroups().map((headerGroup) => (
@@ -210,9 +210,9 @@ export function CSVTable({ initialValue, client }: ICSVTable) {
                 <TableRow>
                   <TableCell
                     colSpan={columns.length}
-                    className="h-24 text-center"
+                    className="p-48 text-center text-2xl"
                   >
-                    No results.
+                    Sem Resultados.
                   </TableCell>
                 </TableRow>
               )}
@@ -220,7 +220,7 @@ export function CSVTable({ initialValue, client }: ICSVTable) {
           </Table>
         </div>
       </div>
-      <div className="flex justify-between ">
+      <div className="flex h-full justify-between">
         <div className="mt-auto flex justify-end space-x-2">
           <Input
             placeholder="Busque por tasks ..."
