@@ -26,17 +26,18 @@ export function InfoCard({ switchPosition }: IInfoCard) {
         >
           <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
         </svg>
-        e-duzca
+        Ada Software House
       </div>
       <div className="m-auto">
         <img src={Images.mascot} alt="mascote e-duzca" />
         <blockquote className="space-y-2">
           <p className="text-lg">
-            &ldquo;Elevando a educação a distância para o próximo nível, como se
-            fosse o nível final de um jogo: descomplicado, eficiente e cheio de
-            conquistas educacionais!&rdquo;
+            &ldquo;Esta aplicação está em fase de testes. Seu objetivo é
+            utilizar Equações Diferenciais Ordinárias (EDO) para melhorar a
+            assertividade na estimativa da duração de tarefas. Os resultados
+            apresentados podem não refletir a versão final do produto.&rdquo;
           </p>
-          <footer className="text-sm">e-duzca</footer>
+          <footer className="text-sm">Ada Software House</footer>
         </blockquote>
       </div>
     </div>

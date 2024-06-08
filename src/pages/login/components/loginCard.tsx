@@ -18,7 +18,6 @@ export function LoginCard() {
         <p className="text-center text-sm text-muted-foreground">
           <Button
             onClick={() => {
-              alert('merda');
               navigate('/home');
             }}
           >
